@@ -23,11 +23,16 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { TextInput_5: "" }
 
   render = () => (
     <View>
       <Text>Sample text content</Text>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_5}
+        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
+      />
     </View>
   )
 }
@@ -37,6 +42,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  Text_3: {}
+  Text_3: {},
+  View_1: {},
+  Text_3: {},
+  TextInput_5: {}
 })
